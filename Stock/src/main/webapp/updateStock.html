@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Portfolio</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #33f3ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h2>Update Stock</h2>
+    <form action="UpdateStockServlet" method="post">
+        <label for="id">Stock ID:</label>
+        <input type="number" id="id" name="id" required><br><br>
+        
+        <label for="quantity">Updated Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+        
+        <label for="stockprice">Updated Stock Price:</label>
+        <input type="number" id="stockprice" name="stockprice" required><br><br>
+        
+        <label for="price">Updated Purchase Price:</label>
+        <input type="number" id="price" name="price" required><br><br>
+        
+        <input type="submit" value="Update Stock">
+    </form>
+    </center>
+</body>
+</html>
