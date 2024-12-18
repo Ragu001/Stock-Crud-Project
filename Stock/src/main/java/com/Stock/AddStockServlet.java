@@ -43,7 +43,7 @@ public class AddStockServlet extends HttpServlet {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfolio", "root", "Ragu@2002");
 
             
-            String query = "INSERT INTO stock (stock_symbol, company_name, quantity, stock_price, purchase_price, purchase_date) VALUES (?, ?, ?, ?, ?, ?)";
+            String query = "INSERT INTO stocks (stock_symbol, company_name, quantity, stock_price, purchase_price, purchase_date) VALUES (?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = con.prepareStatement(query);
 
             
