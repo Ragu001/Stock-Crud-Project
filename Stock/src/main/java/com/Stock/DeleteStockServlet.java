@@ -44,7 +44,7 @@ public class DeleteStockServlet extends HttpServlet {
 	            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfolio", "root", "Ragu@2002");
 
 	            
-	            String query = "DELETE FROM stock WHERE stock_id = ?";
+	            String query = "DELETE FROM stocks WHERE stock_id = ?";
 	            PreparedStatement ps = con.prepareStatement(query);
 	            ps.setInt(1, stockId);
 
