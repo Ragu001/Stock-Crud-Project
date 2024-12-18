@@ -31,7 +31,7 @@ public class UpdateStockServlet extends HttpServlet {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfolio", "root", "Ragu@2002");
 
             // SQL query to update the stock
-            String query = "UPDATE stock SET quantity = ?, purchase_price = ?, stock_price = ? WHERE stock_id = ?";
+            String query = "UPDATE stocks SET quantity = ?, purchase_price = ?, stock_price = ? WHERE stock_id = ?";
             PreparedStatement ps = con.prepareStatement(query);
 
             // Set the values for the query
