@@ -37,7 +37,7 @@ public class ViewStocksServlet extends HttpServlet {
 
          
          Statement stmt = con.createStatement();
-         ResultSet rs = stmt.executeQuery("SELECT * FROM stock");
+         ResultSet rs = stmt.executeQuery("SELECT * FROM stocks");
 
         
          request.setAttribute("stockList", rs);
